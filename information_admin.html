@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="core.css" />
+    <link rel="stylesheet" href="information_admin.css" />
+    <title>Thông tin admin</title>
+  </head>
+  <body>
+    <script type="" src="js.js"></script>
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <!-- Icon -->
+      <div class="header__icon">
+        <a href="#" class="icon__user">
+          <img src="images/user.png" alt="user" />
+        </a>
+        <a href="#" class="icon__noti">
+          <img src="images/notifications.png" alt="notifications" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="main">
+      <!-- Left menu -->
+      <div class="main__leftmenu-close">
+        <div class="menu">
+          <a href="#" class="menu--open">
+            <img src="images/menu-close.png" alt="menu" />
+          </a>
+        </div>
+        <div class="nav">
+          <nav class="nav__menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="images/user-menu.png" alt="user" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="images/distribution-system-menu.png"
+                    alt="distribution-system"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/branch-menu.png" alt="branch" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main__leftmenu-open">
+        <div class="menu-open">
+          <a href="#" class="menu--close">
+            <img src="images/menu-open.png" alt="menu"
+          /></a>
+          <label for="">LOGISTIC SPEED</label>
+        </div>
+
+        <div class="nav">
+          <nav class="nav__menu-open">
+            <ul>
+              <li>
+                <div class="menu__detail">
+                  <img src="images/user-menu.png" alt="user" />
+                  <label for="menu_admin">Menu</label>
+                  <img src="images/arrow-menu.png" />
+                </div>
+              </li>
+              <li>
+                <div class="menu__detail">
+                  <img
+                    src="images/distribution-system-menu.png"
+                    alt="distribution-system"
+                  />
+                  <label for="menu_system">Hệ thống phân phối</label>
+                  <img src="images/arrow-menu.png" />
+                </div>
+              </li>
+              <li>
+                <div class="menu__detail">
+                  <img src="images/branch-menu.png" alt="branch" />
+                  <label for="menu_branch">Chi nhánh</label>
+                  <img src="images/arrow-menu.png" />
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Information admin -->
+      <div class="main__information">
+        <h3>THÔNG TIN ADMIN</h3>
+        <div class="information">
+          <div class="role__avatar">
+            <img src="images/avatar.jpg" alt="avatar admin" />
+          </div>
+          <label for="role__firstname">Họ</label>
+          <label for="role__lastname">Tên</label>
+          <label for="role__email">Email</label>
+          <label for="role__numberphone">Số điện thoại</label>
+          <label for="role__address">Địa chỉ</label>
+        </div>
+        <div class="action">
+            <button>OK</button>
+          </div>
+      </div>
+
+    </div>
+  </body>
+</html>

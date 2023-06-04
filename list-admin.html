@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="core.css" />
+    <link rel="stylesheet" href="list-admin.css" />
+    <title>Danh sách admin</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <!-- Icon -->
+      <div class="header__icon">
+        <a href="#" class="icon__user">
+          <img src="images/user.png" alt="user" />
+        </a>
+        <a href="#" class="icon__noti">
+          <img src="images/notifications.png" alt="notifications" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="main">
+      <!-- Left menu -->
+      <div class="main__leftmenu-close">
+        <div class="menu">
+          <a href="#" class="menu--open">
+            <img src="images/menu-close.png" alt="menu"/>
+          </a>
+        </div>
+        <div class="nav">
+          <nav class="nav__menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="images/user-menu.png" alt="user" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="images/distribution-system-menu.png"
+                    alt="distribution-system"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/branch-menu.png" alt="branch" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main__leftmenu-open">
+        <div class="menu-open">
+          <a href="#" class="menu--close">
+            <img src="images/menu-open.png" alt="menu"
+          /></a>
+          <label for="">LOGISTIC SPEED</label>
+        </div>
+
+        <div class="nav">
+          <nav class="nav__menu-open">
+            <ul>
+              <li>
+                  <div class="menu__detail">
+                    <img src="images/user-menu.png" alt="user" />
+                    <label for="menu_admin">Menu</label>
+                    <img src="images/arrow-menu.png" />
+                  </div>
+              </li>
+              <li>
+                <div class="menu__detail">
+                    <img
+                      src="images/distribution-system-menu.png"
+                      alt="distribution-system"
+                    />
+                    <label for="menu_system">Hệ thống phân phối</label>
+                    <img src="images/arrow-menu.png" />
+                  </div>
+              </li>
+              <li>
+                <div class="menu__detail">
+                    <img src="images/branch-menu.png" alt="branch" />
+                    <label for="menu_branch">Chi nhánh</label>
+                    <img src="images/arrow-menu.png" />
+                  </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="main__content">
+        <!-- Tools -->
+        <div class="tools">
+          <div class="tools__search">
+            <input type="text" class="search-input" placeholder="" />
+            <span class="search-placeholder">
+              <img src="images/search.png" alt="Search" class="search-image"/>
+            </span>
+          </div>
+          <div class="tools__create">
+            <button class="create__button">
+              <img src="images/create.png" class="create-image" alt="Tạo mới" />
+              <span class="create-text">Tạo mới</span>
+            </button>
+          </div>
+        </div>
+        <!-- List customer -->
+        <div class="content">
+          <table>
+            <tr>
+              <th>STT</th>
+              <th>Họ tên <span class="sort-icon"></span></th>
+              <th>Tên <span class="sort-icon"></span></th>
+              <th>Số điện thoại <span class="sort-icon"></span></th>
+              <th>Email<span class="sort-icon"></span></th>
+              <th>Trạng thái<span class="sort-icon"></span></th>
+              <th>Địa chỉ<span class="sort-icon"></span></th>
+              <th>Kinh độ</th>
+              <th>Vĩ độ</th>
+              <th>Ngày tạo<span class="sort-icon"></span></th>
+              <th>Người tạo<span class="sort-icon"></span></th>
+              <th>Hành động</th>
+            </tr>
+            <tr>
+              <td class="user-list-cell">1</td>
+              <td class="user-list-cell">Nguyễn Văn</td>
+              <td class="user-list-cell">An</td>
+              <td class="user-list-cell">0123456789</td>
+              <td class="user-list-cell">user1@example.com</td>
+              <td class="user-list-cell">
+                <img src="images/active.png" alt="active" />
+                Active
+              </td>
+              <td class="user-list-cell">Hà Nội</td>
+              <td class="user-list-cell">Kinh độ</td>
+              <td class="user-list-cell">Vĩ độ</td>
+              <td class="user-list-cell">Date-time</td>
+              <td class="user-list-cell">Admin</td>
+              <td class="user-list-cell">
+                <a href="#">
+                  <img
+                    src="images/icon-edit.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/icon-delete.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="user-list-cell">1</td>
+              <td class="user-list-cell">Nguyễn Văn</td>
+              <td class="user-list-cell">An</td>
+              <td class="user-list-cell">0123456789</td>
+              <td class="user-list-cell">user1@example.com</td>
+              <td class="user-list-cell">
+                <img src="images/off.png" alt="off" /> Off
+              </td>
+              <td class="user-list-cell">Hà Nội1</td>
+              <td class="user-list-cell">Kinh độ</td>
+              <td class="user-list-cell">Vĩ độ</td>
+              <td class="user-list-cell">Date-time</td>
+              <td class="user-list-cell">Admin</td>
+              <td class="user-list-cell">
+                <a href="#">
+                  <img
+                    src="images/icon-edit.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/icon-delete.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="user-list-cell">1</td>
+              <td class="user-list-cell">Nguyễn Văn</td>
+              <td class="user-list-cell">An</td>
+              <td class="user-list-cell">0123456789</td>
+              <td class="user-list-cell">user1@example.com</td>
+              <td class="user-list-cell">
+                <img src="images/active.png" alt="active" />Active
+              </td>
+              <td class="user-list-cell">Hà Nội</td>
+              <td class="user-list-cell">Kinh độ</td>
+              <td class="user-list-cell">Vĩ độ</td>
+              <td class="user-list-cell">Date-time</td>
+              <td class="user-list-cell">Admin</td>
+              <td class="user-list-cell">
+                <a href="#">
+                  <img
+                    src="images/icon-edit.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/icon-delete.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="user-list-cell">1</td>
+              <td class="user-list-cell">Nguyễn Văn</td>
+              <td class="user-list-cell">An</td>
+              <td class="user-list-cell">0123456789</td>
+              <td class="user-list-cell">user1@example.com</td>
+              <td class="user-list-cell">
+                <img src="images/off.png" alt="off" /> Off
+              </td>
+              <td class="user-list-cell">Hà Nội1</td>
+              <td class="user-list-cell">Kinh độ</td>
+              <td class="user-list-cell">Vĩ độ</td>
+              <td class="user-list-cell">Date-time</td>
+              <td class="user-list-cell">Admin</td>
+              <td class="user-list-cell">
+                <a href="#">
+                  <img
+                    src="images/icon-edit.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/icon-delete.png"
+                    alt="edit"
+                    style="width: 20px; height: 20px"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="pagination">
+          <a href="#" class="pagination__arrow">&#8249;</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <p style="width: 20px">...</p>
+          <a href="#">10</a>
+          <a href="#" class="pagination__arrow">&#8250;</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
